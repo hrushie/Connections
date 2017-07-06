@@ -1,26 +1,22 @@
-package com.hrushie.connections.profilepage;
-
+package com.hrushie.connections;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hrushie.connections.R;
-
 /**
- * A simple {@link Fragment} subclass.
+ * Created by hrushie on 7/5/2017.
  */
-public class ProfilePageFragment extends Fragment implements ProfilePageContract.View {
 
+public class FragmentTemplate extends Fragment implements Contract.View {
 
     private Contract.Presenter presenter;
 
 
-    public ProfilePageFragment() {
+    public FragmentTemplate() {
         // Required empty public constructor
     }
 
@@ -58,70 +54,5 @@ public class ProfilePageFragment extends Fragment implements ProfilePageContract
     public void onDestroy() {
         presenter.onSubscribe();
         super.onDestroy();
-    }
-
-    @Override
-    public void makeToast(@StringRes int stringId) {
-
-    }
-
-    @Override
-    public void makeToast(String message) {
-
-    }
-
-    @Override
-    public void setPresenter(ProfilePageContract.Presenter presenter) {
-
-    }
-
-    @Override
-    public void setName(String name) {
-
-    }
-
-    @Override
-    public void setEmail(String email) {
-
-    }
-
-    @Override
-    public void setBio(String bio) {
-
-    }
-
-    @Override
-    public void setInterest(String interest) {
-
-    }
-
-    @Override
-    public void setProfilePhotoUrl(String profilePhotoUrl) {
-
-    }
-
-    @Override
-    public void setDefaultProfilePhoto() {
-
-    }
-
-    @Override
-    public void showLogoutSnackbar() {
-
-    }
-
-    @Override
-    public void startLoginActivity() {
-
-    }
-
-    @Override
-    public void setThumbnailLoadingIndicator() {
-
-    }
-
-    @Override
-    public void setDetailLoadingIndicator() {
-
     }
 }
